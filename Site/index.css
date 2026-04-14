@@ -1,0 +1,184 @@
+
+/*----------------------Filler Image------------------------*/
+.filler {
+  padding: 30px /*top-bottom pads*/ 80px;
+  text-align: center; /* centers text under image */
+}
+
+.filler img {
+  display: block;
+  width: 100%;   /* image takes full width */
+  margin: 0 auto 20px auto; /* center and add spacing below */
+}
+
+.filler .overflow h1 {
+  font-family: sans-serif;
+  margin: 0;
+  background: linear-gradient(navy, skyblue, blue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  line-height: 1.4;
+}
+
+/* Vision & Mission boxes side by side */
+.vm {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.vm .box {
+  flex: 1;
+  min-width: 250px;
+  padding: 25px;
+  background-color: #8a8989;
+  border-radius: 20px;
+  box-shadow: 0 6px 8px rgba(0,0,0,0.4);
+  transition: 0.3s;
+  margin-bottom: -90px;
+}
+
+.vm .box:hover {
+  background-color: aliceblue;
+  transform: scale(1.05);
+}
+
+.vm .box:hover .gradient-text {
+  background: linear-gradient(45deg, #0072ff, #00c6ff); /* blue gradient */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Titles */
+.vm h2 {
+  margin-bottom: 15px;
+  font-size: 22px;
+  text-align: center;
+}
+
+/* Gradient text for titles */
+.gradient-text {
+  background: linear-gradient(45deg, aliceblue, skyblue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Paragraphs */
+.vm p {
+  color: black;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+
+/* Mobile view */
+@media (max-width: 700px) {
+  .filler{
+    padding: 0 20px;
+    margin-bottom: 20px;
+  }
+  .vm {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .vm .box{
+    margin-bottom: 0px;
+    padding: 20px 0;
+    flex: 1 1 45%;   /* 👈 each box takes about half width */
+    min-width: 200px;
+    margin-bottom: 0;
+  }
+}
+
+/*-------------------------About Us-------------------------*/
+.about-us{
+    margin-top: 50px;
+    padding: 90px 100px;
+}
+
+.section-title{
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    font-family: "sans-serif";
+    font-size: 45px;
+}
+
+.section-title::after{
+    content: "";
+    width: 150px;
+    height: 5px;
+    display: block;
+    border-radius: 300px;
+    background: blue;
+    margin: 0 auto 0;
+    margin-bottom: 20px;
+}
+
+.about-us p{
+    font-size: 14px;
+    padding: 30px;
+    align-items: center;
+    text-align: center;
+    color: black;
+    justify-content: space-between;
+    line-height: 25px;
+}
+
+.button {
+  display: block;/* block-level so margin works */
+  margin: 10px auto 0;/* auto left/right centers */
+  padding: 12px 25px;
+  background-color: lightblue;
+  color: black;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.3s ease;
+  width: fit-content;/* prevents full-width stretch */
+  margin-bottom: 20px;
+}
+
+.button:hover {
+  background-color: deepskyblue;
+  color: white;
+}
+
+@media(max-width:768px){
+    .about-us{
+      padding: 0 20px;
+    }
+    .section-title{
+    font-size: 38px;
+    margin-top: 50px;
+    }
+    .about-us p{
+        font-size: 14px;
+    }
+    .about-us .button{
+      margin-bottom: 40px;
+      margin-top: -10px;
+    }
+}
+
+
+/*-----------------------What we Offer----------------------*/
+
+.services{
+  margin-top: -40px;
+  padding: 0;
+}
+
+
+
+
+/*-----------------------Accredited HMO---------------------*/
+
+
