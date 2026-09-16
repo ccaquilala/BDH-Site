@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // ✅ Reset icons when resizing to desktop
     window.addEventListener("resize", () => {
-        if (window.innerWidth > 768) {
+        if (window.innerWidth > 1100) {
             navLinks.classList.remove("show");
             openMenu.style.display = "none";  // hide bars
             closeMenu.style.display = "none"; // hide close
